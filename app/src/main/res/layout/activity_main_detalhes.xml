@@ -27,7 +27,7 @@
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:background="@drawable/btn_borda_cinza"
-            android:text="S" />
+            android:text="EBook" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/buttonM"
@@ -37,9 +37,9 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_weight="1"
-            android:background="@drawable/btn_borda_laranja"
-            android:text="M"
-            android:textColor="#E27D19" />
+            android:background="@drawable/btn_borda_azul"
+            android:text="Brochura"
+            android:textColor="#87CEEB" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/buttonL"
@@ -48,7 +48,7 @@
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:background="@drawable/btn_borda_cinza"
-            android:text="L" />
+            android:text="Capa Dura" />
 
     </LinearLayout>
 
@@ -61,7 +61,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/imgcafe05" />
+        app:srcCompat="@drawable/background_sao_jose" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -89,7 +89,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="408dp"
-        android:text="Espresso Coffee"
+        android:text="Devocionário"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -101,7 +101,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:text="com Chocolate"
+        android:text="a São José"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
@@ -160,7 +160,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:text="Um cappuccino tem aproximadamente 150 ml. Bebida, com 25 ml de café expresso e 85ml de leite fresco para .. Leia mais"
+        android:text="O livro Devocionário a São José é uma seleta de orações reunidas especialmente para quem deseja praticar a devoção ao castíssimo São José. Nele é possível encontrar as orações de todo católico, mais de centenas de orações, diversas instruções e documentos indispensáveis para todo católico."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
@@ -196,7 +196,7 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
-        android:background="@drawable/btn_fundo_laranja"
+        android:background="@drawable/btn_fundo_azul"
         android:text="Comprar agora"
         android:textAllCaps="false"
         android:textColor="@color/white"

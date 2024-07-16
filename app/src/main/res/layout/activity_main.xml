@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#38241D"
+    android:background="#011F37"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -27,13 +27,16 @@
 
                 <ImageView
                     android:id="@+id/imageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="500dp"
+                    android:layout_width="350dp"
+                    android:layout_height="350dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="29dp"
                     android:scaleType="centerCrop"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/imgcafe" />
+                    app:srcCompat="@drawable/sacrabooks" />
 
                 <TextView
                     android:id="@+id/textView"
@@ -42,7 +45,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="32dp"
                     android:layout_marginEnd="16dp"
-                    android:text="Está na Hora de uma pausa para o café gostoso...."
+                    android:text="               SacraBooks"
                     android:textColor="@color/white"
                     android:textSize="30sp"
                     android:textStyle="bold"
@@ -56,11 +59,12 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="32dp"
-                    android:text="Sua dose diária de cerveja fresca entregue em sua porta. Comece sua jornada do café agora!"
+                    android:layout_marginTop="16dp"
+                    android:text=" Com uma vasta coleção de livros religiosos, encíclicas e textos de reflexão, o SacraBooks oferece uma experiência de leitura enriquecedora, acessível a qualquer momento."
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView" />
 

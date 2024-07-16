@@ -62,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
-                android:text="Brasília, DF"
+                android:text="Capitão Poço, PA"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -103,10 +103,10 @@
                 android:layout_height="60dp"
                 android:background="@drawable/fundo_branco_pesquisa"
                 android:drawableStart="@drawable/baseline_search_24"
-                android:drawableEnd="@drawable/imgmenu"
+                android:drawableEnd="@drawable/imgfilters"
                 android:elevation="5dp"
                 android:ems="10"
-                android:hint="Pesquisar café"
+                android:hint="Pesquisar Livro"
                 android:inputType="text"
                 android:paddingStart="5dp"
                 android:paddingEnd="10dp" />
@@ -133,7 +133,7 @@
             android:layout_weight="1"
             android:background="@drawable/btn_escolhido"
             android:elevation="5dp"
-            android:text="Cappuccino"
+            android:text="Livros Religiosos"
             android:textAllCaps="false"
             android:textColor="@color/white" />
 
@@ -146,9 +146,9 @@
             android:layout_weight="1"
             android:background="@drawable/btn_nao_escolhido"
             android:elevation="5dp"
-            android:text="Café"
+            android:text="Biblias"
             android:textAllCaps="false"
-            android:textColor="#E27D19" />
+            android:textColor="#0000FF" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button"
@@ -157,9 +157,9 @@
             android:layout_weight="1"
             android:background="@drawable/btn_nao_escolhido"
             android:elevation="5dp"
-            android:text="Salgados"
+            android:text="Livro Infantil"
             android:textAllCaps="false"
-            android:textColor="#E27D19" />
+            android:textColor="#0000FF" />
     </LinearLayout>
 
     <LinearLayout
@@ -184,12 +184,12 @@
 
             <ImageView
                 android:id="@+id/imageViewCafe"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="142dp"
+                android:layout_height="128dp"
                 android:elevation="10dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/img01"
+                app:srcCompat="@drawable/sao_jose"
                 tools:ignore="DuplicateIds" />
 
             <TextView
@@ -198,7 +198,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="Cappucino"
+                android:text="Devocionario"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/imageViewCafe"
@@ -209,7 +209,7 @@
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="com Chocolate"
+                android:text="a São José"
                 android:textSize="10sp"
                 app:layout_constraintStart_toStartOf="@+id/textView5"
                 app:layout_constraintTop_toBottomOf="@+id/textView5"
@@ -220,7 +220,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="R$ 4.53"
+                android:text="R$ 39.90"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/textView6"
                 app:layout_constraintTop_toBottomOf="@+id/textView6"
@@ -248,12 +248,12 @@
 
             <ImageView
                 android:id="@+id/imageViewCafe"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="142dp"
+                android:layout_height="128dp"
                 android:elevation="10dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/img02"
+                app:srcCompat="@drawable/santa_t"
                 tools:ignore="DuplicateIds" />
 
             <TextView
@@ -262,7 +262,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="Cappucino"
+                android:text="Historia de"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/imageViewCafe"
@@ -273,7 +273,7 @@
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="com Chocolate"
+                android:text="uma Alma"
                 android:textSize="10sp"
                 app:layout_constraintStart_toStartOf="@+id/textView5"
                 app:layout_constraintTop_toBottomOf="@+id/textView5"
@@ -284,7 +284,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="R$ 4.53"
+                android:text="R$ 45.75"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/textView6"
                 app:layout_constraintTop_toBottomOf="@+id/textView6"
@@ -326,12 +326,12 @@
 
             <ImageView
                 android:id="@+id/imageViewCafe"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="142dp"
+                android:layout_height="128dp"
                 android:elevation="10dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/img04" />
+                app:srcCompat="@drawable/sao_bento" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -384,12 +384,12 @@
 
             <ImageView
                 android:id="@+id/imageViewCafe"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="142dp"
+                android:layout_height="128dp"
                 android:elevation="10dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/img02" />
+                app:srcCompat="@drawable/catecismo_c" />
 
             <TextView
                 android:id="@+id/textView5"
