@@ -1,14 +1,17 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+
+    // Add the Google services Gradle plugin
+    id("com.google.gms.google-services")
 }
 
 android {
-    namespace = "com.projeto.projeto11"
+    namespace = "com.projeto.sacrabooks"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.projeto.projeto11"
+        applicationId = "com.projeto.sacrabooks"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -42,7 +45,13 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.firebase.common.ktx)
+    implementation(libs.firebase.auth.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    // Import the Firebase BoM
+    implementation(platform("com.google.firebase:firebase-bom:33.2.0"))
+    // Import the Firebase auth
+    implementation(platform("com.google.firebase:firebase-auth:21.0.1"))
 }

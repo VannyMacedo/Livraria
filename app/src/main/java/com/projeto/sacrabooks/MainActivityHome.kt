@@ -1,10 +1,11 @@
-package com.projeto.projeto11
+package com.projeto.sacrabooks
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import com.projeto.sacrabooks.R
 
 class MainActivityHome : AppCompatActivity() {
 
