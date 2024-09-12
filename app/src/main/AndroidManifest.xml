@@ -12,21 +12,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Projeto11"
         tools:targetApi="31">
+
+        <!-- MainActivityDetalhes -->
         <activity
             android:name=".MainActivityDetalhes"
             android:exported="false" />
+
+        <!-- MainActivityHome -->
         <activity
             android:name=".MainActivityHome"
             android:exported="false" />
+
+        <!-- MainActivityRegister -->
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivityRegister"
+            android:exported="false" />
+
+        <!-- MainActivityLogin - Set as Launcher Activity -->
+        <activity
+            android:name=".MainActivityLogin"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- MainActivity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

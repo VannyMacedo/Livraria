@@ -1,10 +1,11 @@
-package com.projeto.projeto11
+package com.projeto.sacrabooks
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.projeto.sacrabooks.R
 
 class MainActivityDetalhes : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
