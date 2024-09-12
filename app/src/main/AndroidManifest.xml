@@ -30,7 +30,7 @@
 
         <!-- MainActivityLogin - Set as Launcher Activity -->
         <activity
-            android:name=".MainActivityLogin"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,7 +40,7 @@
 
         <!-- MainActivity -->
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivityLogin"
             android:exported="false" />
     </application>
 

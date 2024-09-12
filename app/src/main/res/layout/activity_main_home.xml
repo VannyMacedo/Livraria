@@ -131,7 +131,7 @@
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:background="@drawable/btn_escolhido"
+            android:background="#011F37"
             android:elevation="5dp"
             android:text="Livros Religiosos"
             android:textAllCaps="false"
@@ -148,7 +148,7 @@
             android:elevation="5dp"
             android:text="Biblias"
             android:textAllCaps="false"
-            android:textColor="#0000FF" />
+            android:textColor="#011F37" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button"
@@ -159,7 +159,7 @@
             android:elevation="5dp"
             android:text="Livro Infantil"
             android:textAllCaps="false"
-            android:textColor="#0000FF" />
+            android:textColor="#011F37" />
     </LinearLayout>
 
     <LinearLayout
@@ -194,11 +194,11 @@
 
             <TextView
                 android:id="@+id/textView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="124dp"
+                android:layout_height="41dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="Devocionario"
+                android:text="Devocionario a São José"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/imageViewCafe"
@@ -206,25 +206,14 @@
                 tools:ignore="DuplicateIds" />
 
             <TextView
-                android:id="@+id/textView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="a São José"
-                android:textSize="10sp"
-                app:layout_constraintStart_toStartOf="@+id/textView5"
-                app:layout_constraintTop_toBottomOf="@+id/textView5"
-                tools:ignore="DuplicateIds" />
-
-            <TextView
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
                 android:text="R$ 39.90"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@+id/textView6"
-                app:layout_constraintTop_toBottomOf="@+id/textView6"
-                tools:ignore="DuplicateIds" />
+                tools:ignore="DuplicateIds"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="179dp" />
 
             <ImageView
                 android:id="@+id/imageView6"
@@ -250,6 +239,7 @@
                 android:id="@+id/imageViewCafe"
                 android:layout_width="142dp"
                 android:layout_height="128dp"
+                android:layout_marginTop="8dp"
                 android:elevation="10dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -262,7 +252,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="Historia de"
+                android:text="Historia de uma Alma"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/imageViewCafe"
@@ -270,25 +260,14 @@
                 tools:ignore="DuplicateIds" />
 
             <TextView
-                android:id="@+id/textView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="uma Alma"
-                android:textSize="10sp"
-                app:layout_constraintStart_toStartOf="@+id/textView5"
-                app:layout_constraintTop_toBottomOf="@+id/textView5"
-                tools:ignore="DuplicateIds" />
-
-            <TextView
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
                 android:text="R$ 45.75"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@+id/textView6"
-                app:layout_constraintTop_toBottomOf="@+id/textView6"
-                tools:ignore="DuplicateIds" />
+                tools:ignore="DuplicateIds"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="179dp" />
 
             <ImageView
                 android:id="@+id/imageView6"
@@ -339,30 +318,20 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="Cappucino"
+                android:text="Vida de São Bento"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/imageViewCafe"
                 app:layout_constraintTop_toBottomOf="@+id/imageViewCafe" />
 
             <TextView
-                android:id="@+id/textView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="com Chocolate"
-                android:textSize="10sp"
-                app:layout_constraintStart_toStartOf="@+id/textView5"
-                app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-            <TextView
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="R$ 4.53"
+                android:text="R$ 48.99"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@+id/textView6"
-                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="180dp" />
 
             <ImageView
                 android:id="@+id/imageView6"
@@ -397,30 +366,20 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="Cappucino"
+                android:text="Catecismo"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/imageViewCafe"
                 app:layout_constraintTop_toBottomOf="@+id/imageViewCafe" />
 
             <TextView
-                android:id="@+id/textView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="com Chocolate"
-                android:textSize="10sp"
-                app:layout_constraintStart_toStartOf="@+id/textView5"
-                app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-            <TextView
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="R$ 4.53"
+                android:text="R$ 52.79"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@+id/textView6"
-                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="180dp" />
 
             <ImageView
                 android:id="@+id/imageView6"

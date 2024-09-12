@@ -85,35 +85,24 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="57dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="408dp"
-        android:text="Devocionário"
+        android:layout_marginTop="388dp"
+        android:text="Devocionário a São josé"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:text="a São José"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView9"
         app:layout_constraintStart_toEndOf="@+id/textView8"
         app:layout_constraintTop_toTopOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.407"
         app:srcCompat="@drawable/baseline_star_24" />
 
     <TextView
@@ -133,10 +122,11 @@
         android:layout_width="0dp"
         android:layout_height="2dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="480dp"
+        android:layout_marginTop="460dp"
         android:layout_marginEnd="32dp"
         android:background="#EAEAEA"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -157,9 +147,9 @@
         android:id="@+id/textView12"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="30dp"
         android:text="O livro Devocionário a São José é uma seleta de orações reunidas especialmente para quem deseja praticar a devoção ao castíssimo São José. Nele é possível encontrar as orações de todo católico, mais de centenas de orações, diversas instruções e documentos indispensáveis para todo católico."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
