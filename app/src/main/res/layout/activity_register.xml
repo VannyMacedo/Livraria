@@ -4,42 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgorund_ceu_azul_ii"
+    android:background="@drawable/FundoAz"
     tools:context=".MainActivityRegister">
 
     <!-- Logo ou imagem no topo -->
-    <ImageView
-        android:id="@+id/registerLogoImageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginBottom="40dp"
-        android:contentDescription="@string/app_logo"
-        app:srcCompat="@drawable/sacrabooks"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
 
     <!-- Campo Username -->
 
     <!-- Campo Email -->
+
+    <ImageView
+        android:id="@+id/registerLogoImageView"
+        android:layout_width="87dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/app_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sacrabooks" />
+
     <EditText
         android:id="@+id/usernameEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="236dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/edit_text_background"
         android:drawablePadding="10dp"
-        android:hint="Username"
+        android:hint="Nome"
         android:inputType="text"
         android:padding="12dp"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerLogoImageView" />
 
@@ -47,60 +48,60 @@
         android:id="@+id/emailEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit_text_background"
+        android:drawablePadding="10dp"
         android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white"
-        android:drawablePadding="10dp"
-        android:padding="12dp"
-        android:background="@drawable/edit_text_background"
         android:textSize="16sp"
-        android:inputType="textEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/usernameEditText"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="20dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameEditText" />
 
     <!-- Campo Senha -->
     <EditText
         android:id="@+id/passwordEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Password"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit_text_background"
+        android:drawablePadding="10dp"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:padding="12dp"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white"
-        android:drawablePadding="10dp"
-        android:padding="12dp"
-        android:background="@drawable/edit_text_background"
         android:textSize="16sp"
-        android:inputType="textPassword"
-        app:layout_constraintTop_toBottomOf="@+id/emailEditText"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="20dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
 
     <!-- Campo Confirmar Senha -->
     <EditText
         android:id="@+id/confirmPasswordEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Confirm Password"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit_text_background"
+        android:drawablePadding="10dp"
+        android:hint="Confirme sua Senha"
+        android:inputType="textPassword"
+        android:padding="12dp"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white"
-        android:drawablePadding="10dp"
-        android:padding="12dp"
-        android:background="@drawable/edit_text_background"
         android:textSize="16sp"
-        android:inputType="textPassword"
-        app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="20dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
 
     <!-- Botão de Registro -->
     <Button
@@ -111,23 +112,42 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="@color/white"
-        android:text="SIGN UP"
+        android:text="Inscreva-se"
         android:textColor="#000005"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/confirmPasswordEditText" />
 
     <!-- Texto de Login (já tem conta?) -->
+
     <TextView
         android:id="@+id/loginTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Already have an account? LOGIN"
+        android:layout_marginTop="16dp"
+        android:text="Já tem uma conta?   LOGIN"
         android:textColor="@android:color/white"
         android:textSize="14sp"
-        app:layout_constraintTop_toBottomOf="@+id/registerButton"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerButton" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="140dp"
+        android:layout_height="126dp"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="137dp"
+        tools:srcCompat="@drawable/ic_person" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FAFAFA"
+        android:textColor="#000005"
+        android:text="Button"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="276dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,10 +13,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="650dp"
+        android:layout_marginTop="576dp"
         android:layout_marginEnd="32dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -38,8 +39,9 @@
             android:layout_marginEnd="30dp"
             android:layout_weight="1"
             android:background="@drawable/btn_borda_azul"
+            android:backgroundTint="#011F37"
             android:text="Brochura"
-            android:textColor="#87CEEB" />
+            android:textColor="#FBFBFB" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/buttonL"
@@ -54,11 +56,11 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="429dp"
+        android:layout_height="471dp"
         android:scaleType="fitStart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/background_sao_jose" />
@@ -85,10 +87,10 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="180dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="388dp"
+        android:layout_width="262dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="364dp"
         android:text="Devocionário a São josé"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -100,31 +102,34 @@
         android:id="@+id/imageView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toEndOf="@+id/textView8"
         app:layout_constraintTop_toTopOf="@+id/textView8"
         app:srcCompat="@drawable/baseline_star_24" />
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="68dp"
-        android:layout_height="wrap_content"
+        android:layout_width="22dp"
+        android:layout_height="23dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="32dp"
-        android:text="4.5 (2,330)"
+        android:text="4.5"
         app:layout_constraintBottom_toBottomOf="@+id/imageView9"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toTopOf="@+id/imageView9" />
+        app:layout_constraintTop_toTopOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="1.0" />
 
     <View
         android:id="@+id/view2"
         android:layout_width="0dp"
         android:layout_height="2dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="460dp"
+        android:layout_marginTop="412dp"
         android:layout_marginEnd="32dp"
-        android:background="#EAEAEA"
+        android:background="#011F37"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -134,8 +139,8 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
         android:text="Descrição"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -148,10 +153,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="30dp"
         android:text="O livro Devocionário a São José é uma seleta de orações reunidas especialmente para quem deseja praticar a devoção ao castíssimo São José. Nele é possível encontrar as orações de todo católico, mais de centenas de orações, diversas instruções e documentos indispensáveis para todo católico."
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -159,10 +165,10 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
         android:text="Preço"
-        android:textColor="#9B9B9B"
+        android:textColor="#011F37"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -173,9 +179,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:text="R$ 4.53"
-        android:textColor="#E27D19"
+        android:layout_marginTop="16dp"
+        android:text="R$ 39.30"
+        android:textColor="#011F37"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -185,14 +191,15 @@
         android:id="@+id/button6"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="28dp"
         android:background="@drawable/btn_fundo_azul"
+        android:backgroundTint="#011F37"
         android:text="Comprar agora"
         android:textAllCaps="false"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/textView16"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView16"
-        app:layout_constraintVertical_bias="0.38" />
+        app:layout_constraintVertical_bias="0.428" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
