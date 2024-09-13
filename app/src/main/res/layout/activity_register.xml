@@ -145,9 +145,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FAFAFA"
+        android:text="Inserir Foto"
         android:textColor="#000005"
-        android:text="Button"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="276dp" />
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="274dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
