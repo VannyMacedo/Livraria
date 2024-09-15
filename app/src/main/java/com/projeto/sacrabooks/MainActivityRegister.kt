@@ -1,21 +1,42 @@
 package com.projeto.sacrabooks
 
 
+import android.app.Activity
+import android.net.Uri
 import android.os.Bundle
+import android.provider.MediaStore
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.FileProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.projeto.sacrabooks.R
+import java.io.File
+import android.content.Intent
+import android.graphics.Bitmap
+import androidx.activity.result.ActivityResult
+import androidx.activity.result.registerForActivityResult
+
 
 class MainActivityRegister : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
+
+        val btncamera = findViewById<Button>(R.id.btncamera)
+
+
+        btncamera.setOnClickListener{
+            startForResult.launch(Intent(MediaStore.ACTION_IMAGE_CAPTURE))
+
+        }
 
         // Inicializa o FirebaseAuth
         auth = FirebaseAuth.getInstance()
@@ -45,5 +66,16 @@ class MainActivityRegister : AppCompatActivity() {
                 Toast.makeText(this, "Preencha todos os campos", Toast.LENGTH_SHORT).show()
             }
         }
+    }
+    private val startForResult = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
+        result: ActivityResult ->
+        if(result.resultCode == Activity.RESULT_OK){
+            val intent = result.data
+            val imageBitmap = intent?.extras?.get("data") as Bitmap
+            val imageView = findViewById<ImageView>(R.id.imageView5)
+            imageView.setImageBitmap(imageBitmap)
+
+        }
+
     }
 }
