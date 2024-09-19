@@ -1,25 +1,30 @@
 package com.projeto.sacrabooks
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.ImageView
 import android.widget.Toast
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.projeto.sacrabooks.R
 
 class MainActivityLogin : AppCompatActivity() {
+
     private lateinit var auth: FirebaseAuth
-    private lateinit var registro: ImageView
+    private lateinit var register: Button
+
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login) // Make sure activity_login.xml matches the XML file
 
-        registro = findViewById(R.id.imageView2)
+        setContentView(R.layout.activity_login)
 
-        registro.setOnClickListener {
+        register = findViewById(R.id.registerButton3)
+
+        register.setOnClickListener {
             val proximaTela = Intent(this, MainActivityRegister::class.java)
             startActivity(proximaTela)
         }
