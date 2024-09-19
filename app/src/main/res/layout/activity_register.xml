@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/FundoAz"
+    android:background="@drawable/fundo_az"
     tools:context=".MainActivityRegister">
 
     <!-- Logo ou imagem no topo -->
@@ -29,7 +29,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginTop="228dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/edit_text_background"
         android:drawablePadding="10dp"
@@ -40,7 +40,7 @@
         android:textColorHint="@android:color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerLogoImageView" />
 
@@ -104,31 +104,49 @@
         app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
 
     <!-- Botão de Registro -->
+
+    <!-- Texto de Login (já tem conta?) -->
+
     <Button
         android:id="@+id/registerButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="@color/white"
         android:text="Inscreva-se"
         android:textColor="#000005"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/confirmPasswordEditText" />
 
-    <!-- Texto de Login (já tem conta?) -->
+    <Button
+        android:id="@+id/registerButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/white"
+        android:text="Faça Login"
+        android:textColor="#000005"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPasswordEditText" />
 
     <TextView
         android:id="@+id/loginTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Já tem uma conta?   LOGIN"
+        android:layout_marginTop="8dp"
+        android:text="Já tem uma conta?  "
         android:textColor="@android:color/white"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerButton" />
 
@@ -136,18 +154,30 @@
         android:id="@+id/imageView5"
         android:layout_width="140dp"
         android:layout_height="126dp"
-        tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="137dp"
-        tools:srcCompat="@drawable/ic_person" />
+        android:layout_marginStart="135dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/btncamera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerLogoImageView"
+        tools:srcCompat="@drawable/perfil2" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btncamera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginEnd="145dp"
         android:backgroundTint="#FAFAFA"
         android:text="Inserir Foto"
         android:textColor="#000005"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="274dp" />
+        app:layout_constraintBottom_toTopOf="@+id/usernameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.226" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

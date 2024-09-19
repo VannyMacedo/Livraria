@@ -15,6 +15,20 @@
 
     <!-- Campo de Password -->
 
+    <Button
+        android:id="@+id/registerButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginEnd="147dp"
+        android:backgroundTint="@color/white"
+        android:text="Cadastre-se"
+        android:textColor="#000005"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPasswordTextView" />
+
     <ImageView
         android:id="@+id/logoImageView"
         android:layout_width="wrap_content"
@@ -88,19 +102,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginButton" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="146dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginEnd="133dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/forgotPasswordTextView"
-        app:srcCompat="@drawable/botaocadastro"
-        tools:ignore="MissingConstraints" />
 
     <!-- Texto Sign Up -->
 

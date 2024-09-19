@@ -6,12 +6,11 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import com.projeto.sacrabooks.R
 
 class MainActivityHome : AppCompatActivity() {
 
     private lateinit var prosseguir: ImageView
-    private lateinit var login: ImageView
+    private lateinit var register: ImageView
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,15 +19,15 @@ class MainActivityHome : AppCompatActivity() {
         setContentView(R.layout.activity_main_home)
 
         prosseguir = findViewById(R.id.imageViewCafe)
-        login = findViewById(R.id.imageViewLogin)
+        register = findViewById(R.id.imageLogin)
 
         prosseguir.setOnClickListener {
             val proximaTela = Intent(this, MainActivityDetalhes::class.java)
             startActivity(proximaTela)
         }
 
-        login.setOnClickListener {
-            val proximaTela = Intent(this, MainActivityLogin::class.java)
+        register.setOnClickListener {
+            val proximaTela = Intent(this, MainActivityRegister::class.java)
             startActivity(proximaTela)
         }
     }
