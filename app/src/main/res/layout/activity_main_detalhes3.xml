@@ -1,23 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/imagemlogin"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivityDetalhes">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.074" />
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="608dp"
+        android:layout_marginTop="632dp"
         android:layout_marginEnd="32dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -55,31 +66,11 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="419dp"
-        android:layout_height="854dp"
-        android:scaleType="fitStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/background_sao_jose" />
-
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:src="@drawable/baseline_arrow_back_ios_24"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
         android:id="@+id/imageView7"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="36dp"
         android:src="@drawable/baseline_favorite_border_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -90,7 +81,7 @@
         android:layout_height="41dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="404dp"
-        android:text="Devocionário a São josé"
+        android:text="Vida de São Bento"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -154,7 +145,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="30dp"
-        android:text="O livro Devocionário a São José é uma seleta de orações reunidas especialmente para quem deseja praticar a devoção ao castíssimo São José. Nele é possível encontrar as orações de todo católico, mais de centenas de orações, diversas instruções e documentos indispensáveis para todo católico."
+        android:text="Este livro baseia-se no relato de quatro discípulos de São Bento a São Gregório, conforme ele mesmo diz em seu prólogo: ‘Não pude conhecer todos os feitos de sua vida (São Bento), mas os pouco que narro soube-os por ouvi-los de quatro de seus discípulos: Constantino, varão venerabilíssimo que lhe sucedeu no governo do monastério de Monte Cassino..."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -179,7 +170,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
-        android:text="R$ 39.30"
+        android:text="R$ 49.99"
         android:textColor="#011F37"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -201,4 +192,15 @@
         app:layout_constraintTop_toTopOf="@+id/textView16"
         app:layout_constraintVertical_bias="0.428" />
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="211dp"
+        android:layout_height="482dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.016"
+        app:srcCompat="@drawable/sao_bento" />
 </androidx.constraintlayout.widget.ConstraintLayout>

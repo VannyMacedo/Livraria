@@ -109,8 +109,8 @@
 
     <Button
         android:id="@+id/registerButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="32dp"
@@ -151,7 +151,7 @@
         app:layout_constraintTop_toBottomOf="@+id/registerButton" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/ivphoto"
         android:layout_width="140dp"
         android:layout_height="126dp"
         android:layout_marginStart="135dp"
@@ -177,7 +177,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/ivphoto"
         app:layout_constraintVertical_bias="0.226" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

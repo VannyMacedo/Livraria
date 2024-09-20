@@ -8,26 +8,20 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivityDetalhes : AppCompatActivity() {
+class MainActivityDetalhes2: AppCompatActivity() {
 
     private lateinit var voltarhome: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main_detalhes)
+        setContentView(R.layout.activity_main_detalhes2)
 
-        voltarhome = findViewById(R.id.imageView4)
+        voltarhome = findViewById(R.id.imageView5)
 
         voltarhome.setOnClickListener {
             val proximaTela = Intent(this, MainActivityHome::class.java)
             startActivity(proximaTela)
-        }
-
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.imagemlogin)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
         }
     }
 }

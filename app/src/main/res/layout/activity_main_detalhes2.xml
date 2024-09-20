@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/imagemlogin"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivityDetalhes">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="608dp"
+        android:layout_marginTop="632dp"
         android:layout_marginEnd="32dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -55,30 +54,10 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="419dp"
-        android:layout_height="854dp"
-        android:scaleType="fitStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/background_sao_jose" />
-
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:src="@drawable/baseline_arrow_back_ios_24"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
         android:id="@+id/imageView7"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="32dp"
         android:src="@drawable/baseline_favorite_border_24"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,7 +69,7 @@
         android:layout_height="41dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="404dp"
-        android:text="Devocionário a São josé"
+        android:text="Historia de uma Alma"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -154,7 +133,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="30dp"
-        android:text="O livro Devocionário a São José é uma seleta de orações reunidas especialmente para quem deseja praticar a devoção ao castíssimo São José. Nele é possível encontrar as orações de todo católico, mais de centenas de orações, diversas instruções e documentos indispensáveis para todo católico."
+        android:text="A obra é uma autobiografia espiritual que retrata a jornada de uma jovem em busca da santidade e da união com Deus. Com uma linguagem simples e cativante, Terezinha expõe seus pensamentos e sentimentos mais profundos, revelando seu amor pela natureza, sua devoção à Virgem Maria e sua confiança na misericórdia divina."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -164,8 +143,8 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
         android:text="Preço"
         android:textColor="#011F37"
         android:textSize="16sp"
@@ -179,7 +158,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
-        android:text="R$ 39.30"
+        android:text="R$ 45.75"
         android:textColor="#011F37"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -200,5 +179,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView16"
         app:layout_constraintVertical_bias="0.428" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="190dp"
+        android:layout_height="358dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/santa_t" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="30dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
