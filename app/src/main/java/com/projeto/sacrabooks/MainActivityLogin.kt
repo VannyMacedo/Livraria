@@ -25,7 +25,7 @@ class MainActivityLogin : AppCompatActivity() {
         register = findViewById(R.id.registerButton3)
 
         register.setOnClickListener {
-            val proximaTela = Intent(this, MainActivityRegister::class.java)
+            val proximaTela = Intent(this, RegisterFragment::class.java)
             startActivity(proximaTela)
         }
 

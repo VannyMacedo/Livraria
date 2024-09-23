@@ -1,11 +1,9 @@
 package com.projeto.sacrabooks
 
-import android.annotation.SuppressLint
-import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 
 class MainActivityHome : AppCompatActivity() {
 
@@ -18,10 +16,8 @@ class MainActivityHome : AppCompatActivity() {
     private lateinit var botfavoritos: ImageView
     private lateinit var botinformacoes: ImageView
 
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_main_home)
 
         prosseguir = findViewById(R.id.imageViewCafe)
@@ -33,45 +29,46 @@ class MainActivityHome : AppCompatActivity() {
         botfavoritos = findViewById(R.id.imageView12Teste)
         botinformacoes = findViewById(R.id.imageView12Otimo)
 
+        // Carregar o fragmento inicial
+        loadFragment(HomeFragment())
+
         prosseguir.setOnClickListener {
-            val proximaTela = Intent(this, MainActivityDetalhes::class.java)
-            startActivity(proximaTela)
+            loadFragment(DetalhesFragment()) // Carrega o fragmento de Detalhes
         }
 
         register.setOnClickListener {
-            val proximaTela = Intent(this, MainActivityRegister::class.java)
-            startActivity(proximaTela)
+            loadFragment(RegisterFragment()) // Carrega o fragmento de Registro
         }
+
         prosseguir2.setOnClickListener {
-            val proximaTela = Intent(this, MainActivityDetalhes2::class.java)
-            startActivity(proximaTela)
+            loadFragment(DetalhesFragment2()) // Carrega Detalhes 2
         }
 
         prosseguir3.setOnClickListener {
-            val proximaTela = Intent(this, MainActivityDetalhes3::class.java)
-            startActivity(proximaTela)
+            loadFragment(DetalhesFragment3())
         }
 
         prosseguir4.setOnClickListener {
-            val proximaTela = Intent(this, MainActivityDetalhes4::class.java)
-            startActivity(proximaTela)
+            loadFragment(DetalhesFragment4())
         }
 
         botsacola.setOnClickListener {
-            val proximaTela = Intent(this, MainActivitySacola::class.java)
-            startActivity(proximaTela)
+            loadFragment(SacolaFragment()) // Carrega o fragmento de Sacola
         }
 
         botfavoritos.setOnClickListener {
-            val proximaTela = Intent(this, MainActivityFavoritos::class.java)
-            startActivity(proximaTela)
+            loadFragment(FavoritosFragment()) // Carrega o fragmento de Favoritos
         }
 
         botinformacoes.setOnClickListener {
-            val proximaTela = Intent(this, MainActivityInformacoes::class.java)
-            startActivity(proximaTela)
+            loadFragment(InformacoesFragment()) // Carrega o fragmento de Informações
         }
+    }
 
+    // Função para carregar fragmentos
+    private fun loadFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container, fragment)
+            .commit()
     }
 }
-
