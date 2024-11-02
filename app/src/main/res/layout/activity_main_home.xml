@@ -139,6 +139,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout5"
         android:layout_width="349dp"
         android:layout_height="216dp"
         android:layout_marginStart="32dp"
@@ -301,7 +302,10 @@
 
     </LinearLayout>
 
+
+
     <LinearLayout
+        android:id="@+id/linearLayout6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -398,8 +402,8 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </LinearLayout>
 
+    </LinearLayout>
 
     <FrameLayout
         android:id="@+id/fragment_container"

@@ -18,7 +18,7 @@ class InformacoesFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Infla o layout do fragmento de sacola
-        val view = inflater.inflate(R.layout.activity_main_sacola, container, false)
+        val view = inflater.inflate(R.layout.activity_main_informacoes, container, false)
 
         bothome = view.findViewById(R.id.homeee)
         botfavoritos = view.findViewById(R.id.imageView12Teste)
