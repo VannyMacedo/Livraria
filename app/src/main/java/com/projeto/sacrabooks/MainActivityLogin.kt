@@ -31,6 +31,7 @@ class MainActivityLogin : AppCompatActivity() {
 
         // Initialize FirebaseAuth
         auth = FirebaseAuth.getInstance()
+        auth.signOut()
 
         // Match the XML components
         val usernameEditText = findViewById<EditText>(R.id.usernameEditText)
@@ -44,6 +45,7 @@ class MainActivityLogin : AppCompatActivity() {
             val password = passwordEditText.text.toString()
 
             if (email.isNotEmpty() && password.isNotEmpty()) {
+
                 auth.signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this) { task ->
                         if (task.isSuccessful) {

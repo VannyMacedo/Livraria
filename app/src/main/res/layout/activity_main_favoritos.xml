@@ -75,7 +75,7 @@
                 android:id="@+id/imageView12Otimo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@drawable/bell" />
+                app:srcCompat="@android:drawable/ic_input_get" />
         </LinearLayout>
 
     </LinearLayout>

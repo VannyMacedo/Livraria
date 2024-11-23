@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "509761664050",
-    "project_id": "sacrabooks",
-    "storage_bucket": "sacrabooks.appspot.com"
+    "project_number": "335977925790",
+    "project_id": "sacrabooks-livraria",
+    "storage_bucket": "sacrabooks-livraria.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:509761664050:android:14956e9cbae76ff78df82b",
+        "mobilesdk_app_id": "1:335977925790:android:e036a4b663493dd2b67f8f",
         "android_client_info": {
           "package_name": "com.projeto.sacrabooks"
         }
@@ -15,7 +15,26 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBR6kXjZQ7SeO4f1WMgJoFAdjC477_wUQA"
+          "current_key": "AIzaSyA2-dw_nA9hAd2mX2TETNe6kVtpBIQaIHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335977925790:android:9efcdf688122cc21b67f8f",
+        "android_client_info": {
+          "package_name": "ufra.ipet.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2-dw_nA9hAd2mX2TETNe6kVtpBIQaIHg"
         }
       ],
       "services": {

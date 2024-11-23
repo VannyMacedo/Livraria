@@ -10,9 +10,9 @@
               <option name="connection">
                 <ConnectionSetting>
                   <option name="appId" value="com.projeto.sacrabooks" />
-                  <option name="mobileSdkAppId" value="1:509761664050:android:14956e9cbae76ff78df82b" />
-                  <option name="projectId" value="sacrabooks" />
-                  <option name="projectNumber" value="509761664050" />
+                  <option name="mobileSdkAppId" value="1:335977925790:android:e036a4b663493dd2b67f8f" />
+                  <option name="projectId" value="sacrabooks-livraria" />
+                  <option name="projectNumber" value="335977925790" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
