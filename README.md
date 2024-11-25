@@ -79,9 +79,8 @@ Se você é desenvolvedor e deseja contribuir com o SacraBooks, siga os passos a
 
 ## 🧑‍💻 Contribuidores
 
-- **[Seu Nome]** - Desenvolvedor Android
-- **[Seu Nome]** - Desenvolvedor Android
-- **[Colaborador X]** - Especialista em Backend 
+- **Silvanny Freitas de Macedo** - Desenvolvedor Android
+- **Valéria Oliveira Rodrigues** - Desenvolvedor Android 
 
 ---
 
